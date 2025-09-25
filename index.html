@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas Simples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Bloco de Notas</h1>
+            <p>Digite suas anotações e salve no seu navegador</p>
+        </header>
+        
+        <main>
+            <div class="toolbar">
+                <button id="newNote" class="btn btn-primary">Nova Nota</button>
+                <button id="saveNote" class="btn btn-success">Salvar</button>
+                <button id="loadNote" class="btn btn-info">Carregar</button>
+                <button id="deleteNote" class="btn btn-danger">Excluir</button>
+            </div>
+            
+            <div class="editor-container">
+                <textarea id="noteEditor" placeholder="Digite sua nota aqui..."></textarea>
+            </div>
+            
+            <div class="status-bar">
+                <span id="statusText">Pronto</span>
+                <span id="charCount">0 caracteres</span>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
